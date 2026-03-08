@@ -1,0 +1,1281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Google Analytics (ID: G-CDNW7KYPC1) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CDNW7KYPC1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-CDNW7KYPC1');
+    </script>
+
+    <!-- SEO Meta Tags -->
+    <title>The Financial Expert – Insurance & Mutual Funds Advisor | Paisa Bolta Hai</title>
+    <meta name="description" content="Secure your future with The Financial Expert. We offer comprehensive Motor Insurance, Health Insurance, Life Insurance, and Mutual Funds investment services in India. Get instant quotes and expert financial advice.">
+    <meta name="keywords" content="Financial Expert, Insurance Advisor, Motor Insurance, Health Insurance, Life Insurance, Mutual Funds, SIP Investment, Paisa Bolta Hai, Insurance Quote, Financial Planning, TP Premium Calculator">
+    <meta name="author" content="The Financial Expert">
+    <meta name="robots" content="index, follow">
+
+    <!-- Canonical URL - Updated -->
+    <link rel="canonical" href="https://paisaboltahai.net/" />
+
+    <!-- Open Graph (Facebook, LinkedIn, WhatsApp Sharing) - Updated -->
+    <meta property="og:title" content="The Financial Expert – Paisa Bolta Hai">
+    <meta property="og:description" content="Your trusted partner for Insurance and Investment solutions. Get expert advice on Motor, Health, Life Insurance & Mutual Funds.">
+    <meta property="og:image" content="https://paisaboltahai.net/logo.png">
+    <meta property="og:url" content="https://paisaboltahai.net/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="The Financial Expert">
+
+    <!-- Twitter Card - Updated -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="The Financial Expert – Paisa Bolta Hai">
+    <meta name="twitter:description" content="Comprehensive insurance and investment services. Secure your future today.">
+    <meta name="twitter:image" content="https://paisaboltahai.net/logo.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            /* Background Changed to Green */
+            --navy-dark: #051a0c; /* Deep Dark Green */
+            --navy: #0f3d1f;      /* Medium Green */
+            --navy-light: #1a5c31;/* Lighter Green */
+            
+            /* Accents Kept as Original Yellow/Gold */
+            --gold: #d4a853;
+            --gold-light: #f0c674;
+            --gold-dark: #b8860b;
+            
+            --white: #ffffff;
+            --gray-100: #f7fafc;
+            --gray-200: #edf2f7;
+            --gray-300: #d1d5db;
+            --gray-600: #9ca3af;
+            --success: #48bb78;
+            --error: #f56565;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--navy-dark);
+            color: var(--white);
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+
+        ::-webkit-scrollbar { width: 10px; }
+        ::-webkit-scrollbar-track { background: var(--navy-dark); }
+        ::-webkit-scrollbar-thumb { background: var(--gold); border-radius: 5px; }
+
+        /* Navigation */
+        .navbar {
+            position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+            padding: 1rem 5%;
+            display: flex; justify-content: space-between; align-items: center;
+            background: rgba(5, 26, 12, 0.95);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(212, 168, 83, 0.2);
+            transition: all 0.3s ease;
+        }
+        .navbar.scrolled { padding: 0.7rem 5%; background: rgba(5, 26, 12, 0.98); }
+        
+        .logo { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+        .logo-img { height: 50px; width: auto; border-radius: 50%; object-fit: contain; }
+        .logo-text { display: flex; flex-direction: column; }
+        .logo-title { font-family: 'Playfair Display', serif; font-size: 1.3rem; font-weight: 700; color: var(--white); letter-spacing: 0.5px; }
+        .logo-tagline { font-size: 0.7rem; color: var(--gold); font-weight: 500; letter-spacing: 1px; }
+
+        .nav-links { display: flex; align-items: center; gap: 2rem; }
+        .nav-links a {
+            color: var(--gray-200); text-decoration: none; font-weight: 500; font-size: 0.95rem;
+            transition: color 0.3s ease; position: relative;
+        }
+        .nav-links a::after {
+            content: ''; position: absolute; bottom: -5px; left: 0; width: 0; height: 2px;
+            background: var(--gold); transition: width 0.3s ease;
+        }
+        .nav-links a:hover { color: var(--gold); }
+        .nav-links a:hover::after { width: 100%; }
+
+        .nav-buttons { display: flex; gap: 1rem; align-items: center; position: relative; }
+        
+        .btn {
+            padding: 0.75rem 1.5rem; border-radius: 8px; font-weight: 600; font-size: 0.9rem;
+            cursor: pointer; transition: all 0.3s ease; border: none; text-decoration: none;
+            display: inline-flex; align-items: center; gap: 0.5rem;
+        }
+        .btn-outline { background: transparent; color: var(--gold); border: 2px solid var(--gold); }
+        .btn-outline:hover { background: var(--gold); color: var(--navy-dark); transform: translateY(-2px); box-shadow: 0 5px 20px rgba(212, 168, 83, 0.4); }
+        .btn-primary { background: linear-gradient(135deg, var(--gold), var(--gold-dark)); color: var(--navy-dark); border: none; }
+        .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 25px rgba(212, 168, 83, 0.5); }
+        .btn-large { padding: 1rem 2.5rem; font-size: 1rem; }
+        .btn-small { padding: 0.5rem 1rem; font-size: 0.85rem; }
+
+        /* Dropdown */
+        .dropdown { position: relative; display: inline-block; }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: var(--navy);
+            min-width: 180px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1001;
+            border-radius: 8px;
+            border: 1px solid rgba(212, 168, 83, 0.3);
+            overflow: hidden;
+            padding-top: 10px; 
+            margin-top: -10px; 
+        }
+        .dropdown-content a {
+            color: var(--white);
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: center;
+            font-size: 0.9rem;
+            transition: 0.3s;
+        }
+        .dropdown-content a:hover { background-color: var(--gold); color: var(--navy-dark); }
+        .dropdown:hover .dropdown-content { display: block; }
+
+        .mobile-menu-btn { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 5px; }
+        .mobile-menu-btn span { width: 25px; height: 2px; background: var(--gold); transition: all 0.3s ease; }
+
+        /* Hero Section */
+        .hero { min-height: 100vh; display: flex; align-items: center; position: relative; overflow: hidden; padding: 120px 5% 80px; }
+        #particles-canvas { position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; }
+        .hero-bg {
+            position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+            background: 
+                radial-gradient(ellipse at 20% 80%, rgba(15, 61, 31, 0.6) 0%, transparent 50%),
+                radial-gradient(ellipse at 80% 20%, rgba(212, 168, 83, 0.15) 0%, transparent 40%),
+                linear-gradient(180deg, var(--navy-dark) 0%, #030f07 100%);
+        }
+        .floating-shapes { position: absolute; top: 0; left: 0; right: 0; bottom: 0; overflow: hidden; pointer-events: none; }
+        .shape { position: absolute; border: 1px solid rgba(212, 168, 83, 0.2); animation: float 20s ease-in-out infinite; }
+        .shape-1 { width: 300px; height: 300px; border-radius: 50%; top: 10%; right: 10%; animation-delay: 0s; }
+        .shape-2 { width: 200px; height: 200px; top: 60%; left: 5%; animation-delay: -5s; transform: rotate(45deg); }
+        .shape-3 { width: 150px; height: 150px; border-radius: 50%; bottom: 20%; right: 20%; animation-delay: -10s; }
+        .shape-4 { width: 100px; height: 100px; top: 30%; left: 20%; animation-delay: -15s; transform: rotate(30deg); }
+
+        @keyframes float { 0%, 100% { transform: translateY(0) rotate(0deg); opacity: 0.3; } 50% { transform: translateY(-30px) rotate(10deg); opacity: 0.6; } }
+
+        .hero-content { max-width: 1400px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; position: relative; z-index: 1; }
+        .hero-text h1 { font-family: 'Playfair Display', serif; font-size: 3.5rem; font-weight: 700; line-height: 1.2; margin-bottom: 1.5rem; }
+        .hero-text h1 span { color: var(--gold); }
+        .hero-text p { font-size: 1.2rem; color: var(--gray-300); margin-bottom: 2rem; max-width: 500px; }
+        .hero-buttons { display: flex; gap: 1rem; flex-wrap: wrap; }
+        .hero-stats { display: flex; gap: 3rem; margin-top: 3rem; }
+        .stat-item { text-align: center; }
+        .stat-number { font-family: 'Playfair Display', serif; font-size: 2.5rem; font-weight: 700; color: var(--gold); }
+        .stat-label { font-size: 0.85rem; color: var(--gray-300); margin-top: 0.25rem; }
+
+        .hero-visual { position: relative; }
+        .hero-card {
+            background: linear-gradient(145deg, rgba(15, 61, 31, 0.8), rgba(5, 26, 12, 0.9));
+            border-radius: 20px; padding: 2rem;
+            border: 1px solid rgba(212, 168, 83, 0.3);
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4);
+            transform: perspective(1000px) rotateY(-5deg) rotateX(5deg);
+            transition: transform 0.5s ease;
+        }
+        .hero-card:hover { transform: perspective(1000px) rotateY(0deg) rotateX(0deg); }
+        .card-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; padding-bottom: 1rem; border-bottom: 1px solid rgba(212, 168, 83, 0.2); }
+        .card-title { font-family: 'Playfair Display', serif; font-size: 1.3rem; color: var(--gold); }
+        .card-badge { background: var(--gold); color: var(--navy-dark); padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.75rem; font-weight: 600; }
+        .quick-services { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+        .quick-service {
+            background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 12px;
+            text-align: center; cursor: pointer; transition: all 0.3s ease; border: 1px solid transparent;
+        }
+        .quick-service:hover { background: rgba(212, 168, 83, 0.1); border-color: var(--gold); transform: translateY(-3px); }
+        .quick-service-icon {
+            width: 45px; height: 45px; background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+            border-radius: 10px; display: flex; align-items: center; justify-content: center;
+            margin: 0 auto 0.75rem; font-size: 1.2rem;
+        }
+        .quick-service span { font-size: 0.85rem; color: var(--gray-200); }
+
+        /* Sections */
+        .section { padding: 100px 5%; position: relative; }
+        .section-header { text-align: center; max-width: 700px; margin: 0 auto 4rem; }
+        .section-subtitle { color: var(--gold); font-weight: 600; font-size: 0.9rem; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 1rem; }
+        .section-title { font-family: 'Playfair Display', serif; font-size: 2.8rem; font-weight: 700; margin-bottom: 1rem; }
+        .section-desc { color: var(--gray-300); font-size: 1.1rem; }
+
+        .services-grid { max-width: 1400px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem; }
+        .service-card {
+            background: linear-gradient(145deg, rgba(15, 61, 31, 0.5), rgba(5, 26, 12, 0.8));
+            border-radius: 20px; padding: 2.5rem; border: 1px solid rgba(212, 168, 83, 0.15);
+            transition: all 0.4s ease; position: relative; overflow: hidden;
+        }
+        .service-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px; background: linear-gradient(90deg, var(--gold), var(--gold-light)); transform: scaleX(0); transition: transform 0.4s ease; }
+        .service-card:hover { transform: translateY(-10px); border-color: var(--gold); box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3), 0 0 30px rgba(212, 168, 83, 0.1); }
+        .service-card:hover::before { transform: scaleX(1); }
+        .service-icon {
+            width: 70px; height: 70px; background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+            border-radius: 16px; display: flex; align-items: center; justify-content: center;
+            margin-bottom: 1.5rem; font-size: 1.8rem; box-shadow: 0 10px 30px rgba(212, 168, 83, 0.3);
+        }
+        .service-card h3 { font-family: 'Playfair Display', serif; font-size: 1.5rem; margin-bottom: 1rem; color: var(--white); }
+        .service-card p { color: var(--gray-300); margin-bottom: 1.5rem; line-height: 1.7; }
+        .service-features { list-style: none; margin-bottom: 1.5rem; }
+        .service-features li { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.75rem; color: var(--gray-200); font-size: 0.95rem; }
+        .service-features li::before { content: '✓'; color: var(--gold); font-weight: 700; }
+
+        /* Quote Section */
+        .quote-section { background: linear-gradient(180deg, var(--navy-dark), #030f07); position: relative; }
+        .quote-container { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1.2fr; gap: 4rem; align-items: center; }
+        .quote-info h2 { font-family: 'Playfair Display', serif; font-size: 2.5rem; margin-bottom: 1.5rem; }
+        .quote-info h2 span { color: var(--gold); }
+        .quote-info p { color: var(--gray-300); font-size: 1.1rem; margin-bottom: 2rem; }
+        .quote-benefits { list-style: none; }
+        .quote-benefits li { display: flex; align-items: flex-start; gap: 1rem; margin-bottom: 1.25rem; color: var(--gray-200); }
+        .benefit-icon { width: 30px; height: 30px; background: linear-gradient(135deg, var(--gold), var(--gold-dark)); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 0.8rem; color: var(--navy-dark); }
+
+        .quote-form-container {
+            background: linear-gradient(145deg, rgba(15, 61, 31, 0.6), rgba(5, 26, 12, 0.9));
+            border-radius: 24px; padding: 3rem; border: 1px solid rgba(212, 168, 83, 0.2);
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.3);
+        }
+        .form-title { font-family: 'Playfair Display', serif; font-size: 1.5rem; margin-bottom: 2rem; text-align: center; }
+        .form-title span { color: var(--gold); }
+        .form-group { margin-bottom: 1.25rem; }
+        .form-group label { display: block; margin-bottom: 0.5rem; color: var(--gray-200); font-size: 0.9rem; font-weight: 500; }
+        .form-group input, .form-group select, .form-group textarea {
+            width: 100%; padding: 1rem 1.25rem; background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(212, 168, 83, 0.2); border-radius: 10px; color: var(--white);
+            font-size: 1rem; font-family: inherit; transition: all 0.3s ease;
+        }
+        .form-group input:focus, .form-group select:focus, .form-group textarea:focus { outline: none; border-color: var(--gold); background: rgba(212, 168, 83, 0.05); box-shadow: 0 0 20px rgba(212, 168, 83, 0.1); }
+        .form-group select { cursor: pointer; }
+        .form-group select option { background: var(--navy-dark); color: var(--white); }
+        .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+        .form-submit { width: 100%; margin-top: 1rem; }
+
+        .form-success { text-align: center; padding: 2rem; display: none; }
+        .form-success.show { display: block; }
+        .success-icon { width: 80px; height: 80px; background: linear-gradient(135deg, var(--success), #38a169); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; font-size: 2rem; color: white; }
+
+        /* Why Us */
+        .why-section { background: var(--navy-dark); }
+        .why-grid { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem; }
+        .why-card { text-align: center; padding: 2rem; background: linear-gradient(145deg, rgba(15, 61, 31, 0.3), rgba(5, 26, 12, 0.5)); border-radius: 16px; border: 1px solid rgba(212, 168, 83, 0.1); transition: all 0.3s ease; }
+        .why-card:hover { transform: translateY(-5px); border-color: var(--gold); background: rgba(212, 168, 83, 0.05); }
+        .why-icon { width: 60px; height: 60px; background: linear-gradient(135deg, var(--gold), var(--gold-dark)); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.25rem; font-size: 1.5rem; }
+        .why-card h4 { font-family: 'Playfair Display', serif; font-size: 1.2rem; margin-bottom: 0.75rem; }
+        .why-card p { color: var(--gray-300); font-size: 0.9rem; }
+
+        /* Testimonials */
+        .testimonials-section { background: linear-gradient(180deg, #030f07, var(--navy-dark)); overflow: hidden; }
+        .testimonials-slider { max-width: 1000px; margin: 0 auto; position: relative; }
+        .testimonial-track { display: flex; transition: transform 0.5s ease; }
+        .testimonial-card { min-width: 100%; padding: 3rem; background: linear-gradient(145deg, rgba(15, 61, 31, 0.4), rgba(5, 26, 12, 0.6)); border-radius: 20px; border: 1px solid rgba(212, 168, 83, 0.2); text-align: center; }
+        .testimonial-content { font-size: 1.2rem; color: var(--gray-200); line-height: 1.8; margin-bottom: 2rem; font-style: italic; }
+        .testimonial-content::before { content: '"'; font-family: 'Playfair Display', serif; font-size: 4rem; color: var(--gold); display: block; line-height: 0.5; margin-bottom: 1rem; }
+        .testimonial-author { display: flex; align-items: center; justify-content: center; gap: 1rem; }
+        .author-avatar { width: 60px; height: 60px; background: linear-gradient(135deg, var(--gold), var(--gold-dark)); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 1.5rem; font-weight: 700; color: var(--navy-dark); }
+        .author-info h5 { font-size: 1.1rem; margin-bottom: 0.25rem; }
+        .author-info span { color: var(--gold); font-size: 0.9rem; }
+        .testimonial-nav { display: flex; justify-content: center; gap: 0.75rem; margin-top: 2rem; }
+        .testimonial-dot { width: 12px; height: 12px; border-radius: 50%; background: rgba(212, 168, 83, 0.3); cursor: pointer; transition: all 0.3s ease; }
+        .testimonial-dot.active { background: var(--gold); transform: scale(1.2); }
+
+        /* CTA Section */
+        .cta-section { background: linear-gradient(135deg, var(--navy), var(--navy-dark)); position: relative; overflow: hidden; }
+        .cta-bg { position: absolute; top: 0; left: 0; right: 0; bottom: 0; opacity: 0.1; background-image: radial-gradient(#d4a853 1px, transparent 1px); background-size: 20px 20px; }
+        .cta-content { max-width: 800px; margin: 0 auto; text-align: center; position: relative; z-index: 1; }
+        .cta-content h2 { font-family: 'Playfair Display', serif; font-size: 2.5rem; margin-bottom: 1.5rem; }
+        .cta-content h2 span { color: var(--gold); }
+        .cta-content p { color: var(--gray-300); font-size: 1.2rem; margin-bottom: 2rem; }
+        .cta-buttons { display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; }
+
+        /* Footer */
+        .footer { background: #020a04; padding: 60px 5% 30px; }
+        .footer-grid { max-width: 1400px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 3rem; padding-bottom: 3rem; border-bottom: 1px solid rgba(212, 168, 83, 0.1); }
+        .footer-brand .logo { margin-bottom: 1.5rem; }
+        .footer-brand p { color: var(--gray-300); margin-bottom: 1.5rem; font-size: 0.95rem; line-height: 1.7; }
+        .social-links { display: flex; gap: 1rem; }
+        .social-link { width: 40px; height: 40px; background: rgba(212, 168, 83, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--gold); text-decoration: none; transition: all 0.3s ease; }
+        .social-link:hover { background: var(--gold); color: var(--navy-dark); transform: translateY(-3px); }
+        .footer-col h4 { color: var(--gold); font-family: 'Playfair Display', serif; font-size: 1.2rem; margin-bottom: 1.5rem; }
+        .footer-links { list-style: none; }
+        .footer-links li { margin-bottom: 0.75rem; }
+        .footer-links a { color: var(--gray-300); text-decoration: none; font-size: 0.95rem; transition: color 0.3s ease; }
+        .footer-links a:hover { color: var(--gold); }
+        .footer-bottom { max-width: 1400px; margin: 0 auto; padding-top: 2rem; display: flex; justify-content: space-between; align-items: center; color: var(--gray-600); font-size: 0.9rem; }
+
+        /* Modal */
+        .modal-overlay { position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(2, 10, 4, 0.9); backdrop-filter: blur(10px); z-index: 2000; display: flex; align-items: center; justify-content: center; opacity: 0; visibility: hidden; transition: all 0.3s ease; }
+        .modal-overlay.active { opacity: 1; visibility: visible; }
+        .modal { background: linear-gradient(145deg, rgba(15, 61, 31, 0.9), rgba(5, 26, 12, 0.95)); border-radius: 24px; padding: 3rem; max-width: 450px; width: 90%; border: 1px solid rgba(212, 168, 83, 0.3); box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5); transform: scale(0.9) translateY(20px); transition: transform 0.3s ease; position: relative; max-height: 90vh; overflow-y: auto; }
+        .modal-overlay.active .modal { transform: scale(1) translateY(0); }
+        .modal-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem; }
+        .modal-title { font-family: 'Playfair Display', serif; font-size: 1.5rem; }
+        .modal-title span { color: var(--gold); }
+        .modal-close { width: 36px; height: 36px; background: rgba(212, 168, 83, 0.1); border: none; border-radius: 50%; color: var(--gold); cursor: pointer; font-size: 1.5rem; display: flex; align-items: center; justify-content: center; transition: all 0.3s ease; }
+        .modal-close:hover { background: var(--gold); color: var(--navy-dark); }
+
+        .result-box { background: rgba(0,0,0,0.2); border-radius: 12px; padding: 1.5rem; margin-bottom: 1.5rem; border: 1px solid rgba(212, 168, 83, 0.2); }
+        .result-row { display: flex; justify-content: space-between; margin-bottom: 0.75rem; font-size: 0.95rem; color: var(--gray-200); }
+        .result-row.total { font-weight: 700; font-size: 1.2rem; color: var(--gold); border-top: 1px solid rgba(212, 168, 83, 0.2); padding-top: 0.75rem; margin-top: 0.75rem; }
+        .result-row span:last-child { font-weight: 600; }
+        
+        /* Mobile Nav */
+        .mobile-nav { position: fixed; top: 0; right: -300px; width: 300px; height: 100%; background: var(--navy-dark); z-index: 1500; padding: 80px 2rem 2rem; transition: right 0.3s ease; border-left: 1px solid rgba(212, 168, 83, 0.2); }
+        .mobile-nav.active { right: 0; }
+        .mobile-nav-links { list-style: none; }
+        .mobile-nav-links li { margin-bottom: 1.5rem; }
+        .mobile-nav-links a { color: var(--gray-200); text-decoration: none; font-size: 1.1rem; display: block; padding: 0.5rem 0; border-bottom: 1px solid rgba(212, 168, 83, 0.1); transition: color 0.3s ease; }
+        .mobile-nav-links a:hover { color: var(--gold); }
+        .mobile-nav-buttons { margin-top: 2rem; display: flex; flex-direction: column; gap: 1rem; }
+        .mobile-nav-buttons .btn { width: 100%; justify-content: center; }
+
+        /* Animations */
+        .reveal { opacity: 0; transform: translateY(40px); transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1); }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+        .reveal-delay-1 { transition-delay: 0.1s; }
+        .reveal-delay-2 { transition-delay: 0.2s; }
+        .reveal-delay-3 { transition-delay: 0.3s; }
+        .reveal-delay-4 { transition-delay: 0.4s; }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .hero-content { grid-template-columns: 1fr; text-align: center; }
+            .hero-text p { margin-left: auto; margin-right: auto; }
+            .hero-buttons { justify-content: center; }
+            .hero-stats { justify-content: center; }
+            .hero-visual { max-width: 500px; margin: 0 auto; }
+            .hero-card { transform: none; }
+            .quote-container { grid-template-columns: 1fr; }
+            .why-grid { grid-template-columns: repeat(2, 1fr); }
+            .footer-grid { grid-template-columns: 1fr 1fr; }
+        }
+        @media (max-width: 768px) {
+            .nav-links, .nav-buttons { display: none; }
+            .mobile-menu-btn { display: flex; }
+            .hero-text h1 { font-size: 2.5rem; }
+            .section-title { font-size: 2rem; }
+            .services-grid { grid-template-columns: 1fr; }
+            .form-row { grid-template-columns: 1fr; }
+            .why-grid { grid-template-columns: 1fr; }
+            .footer-grid { grid-template-columns: 1fr; text-align: center; }
+            .social-links { justify-content: center; }
+            .footer-bottom { flex-direction: column; gap: 1rem; text-align: center; }
+            .hero-stats { gap: 1.5rem; }
+            .stat-number { font-size: 2rem; }
+        }
+        @media (max-width: 480px) {
+            .hero-text h1 { font-size: 2rem; }
+            .quick-services { grid-template-columns: 1fr; }
+            .modal { padding: 2rem; }
+            .cta-buttons { flex-direction: column; align-items: center; }
+            .btn-large { padding: 1rem 2rem; width: 100%; max-width: 300px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <a href="#" class="logo">
+            <!-- SEO: Added Alt Text to Logo -->
+            <img src="https://z-cdn-media.chatglm.cn/files/4ec90ecd-fa99-446c-b1ff-59f8e03fa16c.png?auth_key=1872708448-449881a2070c44e5b57659981d2e7bf7-0-935999ef4c7d093fd747701d04f52148" alt="The Financial Expert Logo - Paisa Bolta Hai" class="logo-img">
+            <div class="logo-text">
+                <span class="logo-title">The Financial Expert</span>
+                <span class="logo-tagline">Paisa Bolta Hai</span>
+            </div>
+        </a>
+        <div class="nav-links">
+            <a href="#services">Services</a>
+            <a href="#quote">Get Quote</a>
+            <a href="#why-us">Why Us</a>
+            <a href="#testimonials">Testimonials</a>
+            <a href="#contact">Contact</a>
+        </div>
+        
+        <div class="nav-buttons">
+            <div class="dropdown">
+                <button class="btn btn-outline">Sign In</button>
+                <div class="dropdown-content">
+                    <a href="https://insurebook.in/agent/login">Customer Login</a>
+                    <a href="https://insurebook.in/agent/login">Agent Login</a>
+                </div>
+            </div>
+            <button class="btn btn-primary" onclick="openSignupModal()">Sign Up</button>
+        </div>
+
+        <div class="mobile-menu-btn" onclick="toggleMobileNav()">
+            <span></span><span></span><span></span>
+        </div>
+    </nav>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav" id="mobileNav">
+        <ul class="mobile-nav-links">
+            <li><a href="#services" onclick="closeMobileNav()">Services</a></li>
+            <li><a href="#quote" onclick="closeMobileNav()">Get Quote</a></li>
+            <li><a href="#why-us" onclick="closeMobileNav()">Why Us</a></li>
+            <li><a href="#testimonials" onclick="closeMobileNav()">Testimonials</a></li>
+            <li><a href="#contact" onclick="closeMobileNav()">Contact</a></li>
+        </ul>
+        <div class="mobile-nav-buttons">
+            <a href="https://insurebook.in/agent/login" class="btn btn-outline">Customer Login</a>
+            <a href="https://insurebook.in/agent/login" class="btn btn-outline">Agent Login</a>
+            <button class="btn btn-primary" onclick="openSignupModal(); closeMobileNav();">Sign Up</button>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+        </div>
+        <canvas id="particles-canvas"></canvas>
+        
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="reveal">Secure Your Future with <span>Expert Financial Solutions</span></h1>
+                <p class="reveal reveal-delay-1">Comprehensive insurance and investment services tailored to protect what matters most. Your trusted partner in building lasting financial security.</p>
+                <div class="hero-buttons reveal reveal-delay-2">
+                    <a href="#quote" class="btn btn-primary btn-large">Get Free Quote</a>
+                    <button class="btn btn-outline btn-large" onclick="openCalculatorModal()">Check TP Premium</button>
+                </div>
+                <div class="hero-stats reveal reveal-delay-3">
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="15000">0</div>
+                        <div class="stat-label">Happy Clients</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="500">0</div>
+                        <div class="stat-label">Expert Agents</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="99">0</div>
+                        <div class="stat-label">Claim Success %</div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual reveal reveal-delay-2">
+                <div class="hero-card">
+                    <div class="card-header">
+                        <span class="card-title">Quick Services</span>
+                        <span class="card-badge">Fast & Easy</span>
+                    </div>
+                    <div class="quick-services">
+                        <div class="quick-service" onclick="scrollToQuote('motor')">
+                            <div class="quick-service-icon">🚗</div>
+                            <span>Motor Insurance</span>
+                        </div>
+                        <div class="quick-service" onclick="scrollToQuote('health')">
+                            <div class="quick-service-icon">🏥</div>
+                            <span>Health Insurance</span>
+                        </div>
+                        <div class="quick-service" onclick="scrollToQuote('life')">
+                            <div class="quick-service-icon">❤️</div>
+                            <span>Life Insurance</span>
+                        </div>
+                        <div class="quick-service" onclick="scrollToQuote('mutual')">
+                            <div class="quick-service-icon">📈</div>
+                            <span>Mutual Funds</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section" id="services">
+        <div class="section-header reveal">
+            <p class="section-subtitle">What We Offer</p>
+            <h2 class="section-title">Comprehensive Financial Services</h2>
+            <p class="section-desc">From insurance protection to wealth creation, we provide end-to-end financial solutions for individuals and businesses.</p>
+        </div>
+        <div class="services-grid">
+            <div class="service-card reveal reveal-delay-1">
+                <div class="service-icon">🚗</div>
+                <h3>Motor Insurance</h3>
+                <p>Complete protection for your vehicles with comprehensive coverage options and hassle-free claim settlement.</p>
+                <ul class="service-features">
+                    <li>Car & Two-wheeler Insurance</li>
+                    <li>Third Party & Comprehensive</li>
+                    <li>Instant Policy Issuance</li>
+                    <li>Cashless Garage Network</li>
+                </ul>
+                <button class="btn btn-outline" onclick="scrollToQuote('motor')">Get Quote</button>
+            </div>
+            <div class="service-card reveal reveal-delay-2">
+                <div class="service-icon">🛡️</div>
+                <h3>Non-Motor Insurance</h3>
+                <p>Safeguard your assets and business with specialized insurance solutions for every need.</p>
+                <ul class="service-features">
+                    <li>Home & Property Insurance</li>
+                    <li>Marine & Fire Insurance</li>
+                    <li>Liability Coverage</li>
+                    <li>Business Package Policies</li>
+                </ul>
+                <button class="btn btn-outline" onclick="scrollToQuote('non-motor')">Get Quote</button>
+            </div>
+            <div class="service-card reveal reveal-delay-3">
+                <div class="service-icon">❤️</div>
+                <h3>Life Insurance</h3>
+                <p>Ensure your family's financial security with our range of life insurance products designed for every stage of life.</p>
+                <ul class="service-features">
+                    <li>Term Life Insurance</li>
+                    <li>Endowment Plans</li>
+                    <li>ULIPs & Child Plans</li>
+                    <li>Retirement Solutions</li>
+                </ul>
+                <button class="btn btn-outline" onclick="scrollToQuote('life')">Get Quote</button>
+            </div>
+            <div class="service-card reveal reveal-delay-4">
+                <div class="service-icon">🏥</div>
+                <h3>Health Insurance</h3>
+                <p>Comprehensive health coverage to protect you and your family from rising medical expenses.</p>
+                <ul class="service-features">
+                    <li>Individual & Family Floater</li>
+                    <li>Critical Illness Cover</li>
+                    <li>Personal Accident Policy</li>
+                    <li>Senior Citizen Plans</li>
+                </ul>
+                <button class="btn btn-outline" onclick="scrollToQuote('health')">Get Quote</button>
+            </div>
+            <div class="service-card reveal reveal-delay-1">
+                <div class="service-icon">📈</div>
+                <h3>Mutual Funds</h3>
+                <p>Build wealth systematically with expert-guided mutual fund investments tailored to your risk profile.</p>
+                <ul class="service-features">
+                    <li>Equity & Debt Funds</li>
+                    <li>SIP Investment Plans</li>
+                    <li>Tax Saving ELSS</li>
+                    <li>Portfolio Management</li>
+                </ul>
+                <button class="btn btn-outline" onclick="scrollToQuote('mutual')">Start Investing</button>
+            </div>
+            <div class="service-card reveal reveal-delay-2">
+                <div class="service-icon">💼</div>
+                <h3>Corporate Solutions</h3>
+                <p>Customized insurance and investment solutions for businesses of all sizes.</p>
+                <ul class="service-features">
+                    <li>Group Health Insurance</li>
+                    <li>Employee Benefits</li>
+                    <li>Workmen Compensation</li>
+                    <li>Professional Indemnity</li>
+                </ul>
+                <button class="btn btn-outline" onclick="scrollToQuote('corporate')">Contact Us</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quote Section -->
+    <section class="section quote-section" id="quote">
+        <div class="quote-container">
+            <div class="quote-info reveal">
+                <h2>Get Your <span>Free Quote</span> Today</h2>
+                <p>Fill out our simple form and our experts will get back to you with personalized insurance and investment options.</p>
+                <ul class="quote-benefits">
+                    <li><div class="benefit-icon">✓</div><span>Compare quotes from 20+ insurance companies</span></li>
+                    <li><div class="benefit-icon">✓</div><span>No hidden charges or processing fees</span></li>
+                    <li><div class="benefit-icon">✓</div><span>Expert guidance from certified advisors</span></li>
+                    <li><div class="benefit-icon">✓</div><span>Quick policy issuance and easy claims</span></li>
+                </ul>
+            </div>
+            <div class="quote-form-container reveal reveal-delay-1">
+                <h3 class="form-title">Request a <span>Quote</span></h3>
+                <form id="quoteForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="qName">Full Name *</label>
+                            <input type="text" id="qName" name="name" required placeholder="Enter your name">
+                        </div>
+                        <div class="form-group">
+                            <label for="qPhone">Phone Number *</label>
+                            <input type="tel" id="qPhone" name="phone" required placeholder="+91 XXXXX XXXXX">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="qEmail">Email Address *</label>
+                        <input type="email" id="qEmail" name="email" required placeholder="your@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="qService">Service Required *</label>
+                        <select name="service" id="qService" required>
+                            <option value="">Select a service</option>
+                            <option value="motor">Motor Insurance</option>
+                            <option value="non-motor">Non-Motor Insurance</option>
+                            <option value="life">Life Insurance</option>
+                            <option value="health">Health Insurance</option>
+                            <option value="mutual">Mutual Funds</option>
+                            <option value="corporate">Corporate Solutions</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="qMessage">Message (Optional)</label>
+                        <textarea name="message" id="qMessage" rows="3" placeholder="Tell us about your requirements..."></textarea>
+                    </div>
+                    <input type="hidden" name="form_type" value="Quote Request">
+                    <button type="submit" class="btn btn-primary form-submit">Submit Request</button>
+                </form>
+                <div class="form-success" id="formSuccess">
+                    <div class="success-icon">✓</div>
+                    <h3>Thank You!</h3>
+                    <p>Your request has been submitted successfully. Our expert will contact you within 24 hours.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="section why-section" id="why-us">
+        <div class="section-header reveal">
+            <p class="section-subtitle">Our Strengths</p>
+            <h2 class="section-title">Why Choose The Financial Expert</h2>
+            <p class="section-desc">We combine expertise, technology, and personalized service to deliver exceptional financial solutions.</p>
+        </div>
+        <div class="why-grid">
+            <div class="why-card reveal reveal-delay-1">
+                <div class="why-icon">🏆</div>
+                <h4>15+ Years Experience</h4>
+                <p>Decades of expertise in insurance and financial planning serving thousands of satisfied clients.</p>
+            </div>
+            <div class="why-card reveal reveal-delay-2">
+                <div class="why-icon">🤝</div>
+                <h4>20+ Partners</h4>
+                <p>Strong relationships with leading insurance companies and fund houses for the best options.</p>
+            </div>
+            <div class="why-card reveal reveal-delay-3">
+                <div class="why-icon">⚡</div>
+                <h4>Quick Claims</h4>
+                <p>Dedicated claims assistance team ensuring smooth and fast claim settlement process.</p>
+            </div>
+            <div class="why-card reveal reveal-delay-4">
+                <div class="why-icon">💬</div>
+                <h4>24/7 Support</h4>
+                <p>Round-the-clock customer support via phone, email, and chat for all your queries.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section testimonials-section" id="testimonials">
+        <div class="section-header reveal">
+            <p class="section-subtitle">Client Stories</p>
+            <h2 class="section-title">What Our Clients Say</h2>
+            <p class="section-desc">Real experiences from real clients who trusted us with their financial journey.</p>
+        </div>
+        <div class="testimonials-slider reveal">
+            <div class="testimonial-track" id="testimonialTrack">
+                <div class="testimonial-card">
+                    <p class="testimonial-content">The Financial Expert helped me find the perfect health insurance for my entire family. Their team was patient, knowledgeable, and found me a plan that fit my budget perfectly. Highly recommended!</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">RK</div>
+                        <div class="author-info"><h5>Rajesh Kumar</h5><span>Business Owner, Delhi</span></div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-content">I was confused about mutual fund investments until I met their advisor. They understood my goals and created a SIP portfolio that has grown consistently. Their guidance has been invaluable.</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">PS</div>
+                        <div class="author-info"><h5>Priya Sharma</h5><span>IT Professional, Bangalore</span></div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-content">When my car met with an accident, their claims support team was incredible. They handled everything from documentation to settlement. I got my claim approved in just 3 days!</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">AM</div>
+                        <div class="author-info"><h5>Amit Mehta</h5><span>Marketing Manager, Mumbai</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-nav">
+                <div class="testimonial-dot active" onclick="goToSlide(0)"></div>
+                <div class="testimonial-dot" onclick="goToSlide(1)"></div>
+                <div class="testimonial-dot" onclick="goToSlide(2)"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section cta-section" id="contact">
+        <div class="cta-bg"></div>
+        <div class="cta-content reveal">
+            <h2>Ready to Secure Your <span>Financial Future</span>?</h2>
+            <p>Connect with our certified advisors today and take the first step towards comprehensive financial protection.</p>
+            <div class="cta-buttons">
+                <button class="btn btn-primary btn-large" onclick="openSignupModal()">Join as Agent</button>
+                <a href="https://insurebook.in/agent/login" class="btn btn-outline btn-large">Customer Login</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a href="#" class="logo">
+                    <!-- SEO: Added Alt Text to Logo -->
+                    <img src="https://z-cdn-media.chatglm.cn/files/4ec90ecd-fa99-446c-b1ff-59f8e03fa16c.png?auth_key=1872708448-449881a2070c44e5b57659981d2e7bf7-0-935999ef4c7d093fd747701d04f52148" alt="The Financial Expert Logo" class="logo-img">
+                    <div class="logo-text">
+                        <span class="logo-title">The Financial Expert</span>
+                        <span class="logo-tagline">Paisa Bolta Hai</span>
+                    </div>
+                </a>
+                <p>Your trusted partner for comprehensive insurance and investment solutions. We help individuals and businesses achieve financial security through expert guidance and personalized service.</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/paisaboltahai.net/" class="social-link" aria-label="Facebook">f</a>
+                    <a href="https://www.youtube.com/@The_Financial_Xpert" class="social-link" aria-label="YouTube">YT</a>
+                    <a href="#" class="social-link" aria-label="Twitter">tw</a>
+                    <a href="https://wa.me/+917375973739" class="social-link" aria-label="WhatsApp">wa</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Services</h4>
+                <ul class="footer-links">
+                    <li><a href="#services">Motor Insurance</a></li>
+                    <li><a href="#services">Health Insurance</a></li>
+                    <li><a href="#services">Life Insurance</a></li>
+                    <li><a href="#services">Mutual Funds</a></li>
+                    <li><a href="#services">Corporate Plans</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="#why-us">About Us</a></li>
+                    <li><a href="#quote">Get Quote</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <ul class="footer-links">
+                    <li>10th Floor, IIFL Centre, Kamala Mills Compound, Senapati Bapat Marg, Lower Parel (West)</li>
+                    <li>MUMBAI, MAHARASHTRA, 400013. </li>
+                    <li><a href="tel:+917375973739">+91 73759 73739</a></li>
+                    <li><a href="mailto:contact@paisaboltahai.net">contact@paisaboltahai.net</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>2024 The Financial Expert. All rights reserved.</p>
+            <p>IRDAI Licensed | AMFI Registered</p>
+        </div>
+    </footer>
+
+    <!-- Signup Modal -->
+    <div class="modal-overlay" id="signupModal">
+        <div class="modal">
+            <div class="modal-header">
+                <h3 class="modal-title">Join as <span>Agent</span></h3>
+                <button class="modal-close" onclick="closeModal()">&times;</button>
+            </div>
+            <form id="signupForm">
+                <div class="form-group">
+                    <label for="suName">Full Name *</label>
+                    <input type="text" id="suName" name="name" required placeholder="Enter your full name">
+                </div>
+                <div class="form-group">
+                    <label for="suMobile">Mobile Number *</label>
+                    <input type="tel" id="suMobile" name="phone" required placeholder="+91 XXXXX XXXXX">
+                </div>
+                <div class="form-group">
+                    <label for="suEmail">Email Address *</label>
+                    <input type="email" id="suEmail" name="email" required placeholder="your@email.com">
+                </div>
+                <input type="hidden" name="form_type" value="Agent Registration">
+                <button type="submit" class="btn btn-primary form-submit">Register Now</button>
+            </form>
+            <div class="form-success" id="signupSuccess">
+                <div class="success-icon">✓</div>
+                <h3>Registration Successful!</h3>
+                <p>We have received your application. We will contact you shortly.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- TP Premium Calculator Modal -->
+    <div class="modal-overlay" id="calculatorModal">
+        <div class="modal" style="max-width: 500px;">
+            <div class="modal-header">
+                <h3 class="modal-title">Third Party <span>Premium Calculator</span></h3>
+                <button class="modal-close" onclick="closeCalcModal()">&times;</button>
+            </div>
+            
+            <div id="calcFormContainer">
+                <form id="calcForm" onsubmit="calculateTPPremium(event)">
+                    <div class="form-group">
+                        <label for="calcVehicleNo">Vehicle Number *</label>
+                        <input type="text" name="vehicle_number" id="calcVehicleNo" required placeholder="e.g., MH01AB1234">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="calcMobile">Mobile Number *</label>
+                            <input type="tel" name="phone" id="calcMobile" required placeholder="+91 XXXXX XXXXX">
+                        </div>
+                        <div class="form-group">
+                            <label for="calcEmail">Email Address *</label>
+                            <input type="email" name="email" id="calcEmail" required placeholder="your@email.com">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="calcVehicleType">Vehicle Type *</label>
+                        <select name="vehicle_type" id="calcVehicleType" required onchange="updateCCOptions()">
+                            <option value="">Select Type</option>
+                            <option value="car">Car (Private)</option>
+                            <option value="tw">Two-Wheeler</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="calcCC">Cubic Capacity (CC) *</label>
+                        <select name="cc" id="calcCC" required>
+                            <option value="">Select Vehicle Type First</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary form-submit">Calculate Premium</button>
+                </form>
+            </div>
+
+            <div id="calcResultContainer" style="display: none;">
+                <div class="result-box">
+                    <div class="result-row">
+                        <span>Vehicle No:</span>
+                        <span id="resVehicleNo">-</span>
+                    </div>
+                    <div class="result-row">
+                        <span>Type:</span>
+                        <span id="resVehicleType">-</span>
+                    </div>
+                    <div class="result-row">
+                        <span>CC Range:</span>
+                        <span id="resCC">-</span>
+                    </div>
+                    <hr style="border-color: rgba(212, 168, 83, 0.2); margin: 1rem 0;">
+                    <div class="result-row">
+                        <span>Basic TP Premium:</span>
+                        <span id="resBasePremium">₹0</span>
+                    </div>
+                    <div class="result-row">
+                        <span>GST (18%):</span>
+                        <span id="resGST">₹0</span>
+                    </div>
+                    <div class="result-row total">
+                        <span>Total Premium:</span>
+                        <span id="resTotal">₹0</span>
+                    </div>
+                </div>
+                
+                <div style="display: flex; gap: 1rem;">
+                    <button class="btn btn-outline" style="flex:1;" onclick="resetCalculator()">Recalculate</button>
+                    <button class="btn btn-primary" style="flex:1;" onclick="submitTPQuote()">Save Quote</button>
+                </div>
+            </div>
+
+            <div id="calcSuccess" class="form-success" style="display: none;">
+                <div class="success-icon">✓</div>
+                <h3>Quote Saved!</h3>
+                <p>Your premium quote details have been sent to your email. Our team will contact you shortly.</p>
+                <button class="btn btn-outline" onclick="closeCalcModal()" style="margin-top: 1rem;">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Structured Data for SEO (Schema.org) - Updated -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FinancialService",
+      "name": "The Financial Expert",
+      "alternateName": "Paisa Bolta Hai",
+      "url": "https://paisaboltahai.net",
+      "logo": "https://paisaboltahai.net/logo.png",
+      "description": "Comprehensive insurance and investment services including Motor, Health, Life Insurance and Mutual Funds.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "10th Floor, IIFL Centre, Kamala Mills Compound, Senapati Bapat Marg, Lower Parel (West)",
+        "addressLocality": "Mumbai",
+        "addressRegion": "Maharashtra",
+        "postalCode": "400013",
+        "addressCountry": "IN"
+      },
+      "telephone": "+91-73759-73739",
+      "email": "contact@paisaboltahai.net",
+      "areaServed": "India",
+      "serviceType": ["Insurance", "Mutual Funds", "Financial Planning"]
+    }
+    </script>
+
+    <script>
+        // ==========================================
+        // CONFIGURATION
+        // ==========================================
+        const WEB3FORMS_ACCESS_KEY = "670602e3-967c-4f12-b734-626484977806";
+
+        // Premium Data Tables
+        const PREMIUM_DATA = {
+            car: [
+                { cc_range: "Up to 1000 cc", max_cc: 1000, premium: 2094 },
+                { cc_range: "1000 - 1500 cc", max_cc: 1500, premium: 3416 },
+                { cc_range: "Above 1500 cc", max_cc: Infinity, premium: 7897 }
+            ],
+            tw: [
+                { cc_range: "Up to 75 cc", max_cc: 75, premium: 538 },
+                { cc_range: "75 - 150 cc", max_cc: 150, premium: 714 },
+                { cc_range: "150 - 350 cc", max_cc: 350, premium: 1366 },
+                { cc_range: "Above 350 cc", max_cc: Infinity, premium: 2804 }
+            ]
+        };
+
+        // ==========================================
+        // VISUAL EFFECTS
+        // ==========================================
+        
+        const canvas = document.getElementById('particles-canvas');
+        const ctx = canvas.getContext('2d');
+        let particles = [];
+        let mouseX = 0, mouseY = 0;
+
+        function resizeCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        }
+        resizeCanvas();
+        window.addEventListener('resize', resizeCanvas);
+
+        class Particle {
+            constructor() { this.reset(); }
+            reset() {
+                this.x = Math.random() * canvas.width;
+                this.y = Math.random() * canvas.height;
+                this.size = Math.random() * 3 + 1;
+                this.speedX = (Math.random() - 0.5) * 0.5;
+                this.speedY = (Math.random() - 0.5) * 0.5;
+                this.opacity = Math.random() * 0.5 + 0.2;
+            }
+            update() {
+                this.x += this.speedX;
+                this.y += this.speedY;
+                const dx = mouseX - this.x;
+                const dy = mouseY - this.y;
+                const dist = Math.sqrt(dx * dx + dy * dy);
+                if (dist < 100) {
+                    this.x -= dx * 0.02;
+                    this.y -= dy * 0.02;
+                }
+                if (this.x < 0 || this.x > canvas.width || this.y < 0 || this.y > canvas.height) this.reset();
+            }
+            draw() {
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                // Kept Particle Color as Gold
+                ctx.fillStyle = `rgba(212, 168, 83, ${this.opacity})`;
+                ctx.fill();
+            }
+        }
+
+        for (let i = 0; i < 80; i++) particles.push(new Particle());
+
+        function animateParticles() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            particles.forEach((p1, i) => {
+                particles.slice(i + 1).forEach(p2 => {
+                    const dx = p1.x - p2.x;
+                    const dy = p1.y - p2.y;
+                    const dist = Math.sqrt(dx * dx + dy * dy);
+                    if (dist < 120) {
+                        ctx.beginPath();
+                        ctx.moveTo(p1.x, p1.y);
+                        ctx.lineTo(p2.x, p2.y);
+                        // Kept Line Color as Gold
+                        ctx.strokeStyle = `rgba(212, 168, 83, ${0.1 * (1 - dist / 120)})`;
+                        ctx.stroke();
+                    }
+                });
+            });
+            particles.forEach(p => { p.update(); p.draw(); });
+            requestAnimationFrame(animateParticles);
+        }
+        animateParticles();
+
+        document.addEventListener('mousemove', (e) => { mouseX = e.clientX; mouseY = e.clientY; });
+
+        // Scroll Reveal
+        const revealElements = document.querySelectorAll('.reveal');
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('active'); });
+        }, { threshold: 0.1 });
+        revealElements.forEach(el => revealObserver.observe(el));
+
+        // Navbar Scroll
+        const navbar = document.querySelector('.navbar');
+        window.addEventListener('scroll', () => navbar.classList.toggle('scrolled', window.scrollY > 50));
+
+        // Counter Animation
+        const counters = document.querySelectorAll('.stat-number');
+        const counterObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const target = parseInt(entry.target.dataset.target);
+                    let current = 0;
+                    const increment = target / 60;
+                    const timer = setInterval(() => {
+                        current += increment;
+                        if (current >= target) {
+                            entry.target.textContent = target.toLocaleString() + (target === 99 ? '%' : '+');
+                            clearInterval(timer);
+                        } else {
+                            entry.target.textContent = Math.floor(current).toLocaleString();
+                        }
+                    }, 30);
+                    counterObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+        counters.forEach(counter => counterObserver.observe(counter));
+
+        // Testimonials Slider
+        let currentSlide = 0;
+        const track = document.getElementById('testimonialTrack');
+        const dots = document.querySelectorAll('.testimonial-dot');
+
+        function goToSlide(index) {
+            currentSlide = index;
+            track.style.transform = `translateX(-${index * 100}%)`;
+            dots.forEach((dot, i) => dot.classList.toggle('active', i === index));
+        }
+        setInterval(() => { currentSlide = (currentSlide + 1) % 3; goToSlide(currentSlide); }, 5000);
+
+        // ==========================================
+        // NAVIGATION & UI LOGIC
+        // ==========================================
+        
+        function toggleMobileNav() { document.getElementById('mobileNav').classList.toggle('active'); }
+        function closeMobileNav() { document.getElementById('mobileNav').classList.remove('active'); }
+
+        function scrollToQuote(service) {
+            const quoteSection = document.getElementById('quote');
+            const serviceSelect = document.getElementById('quoteService');
+            if (serviceSelect) serviceSelect.value = service;
+            quoteSection.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) target.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+
+        // ==========================================
+        // MODAL LOGIC
+        // ==========================================
+        
+        function openSignupModal() {
+            const modal = document.getElementById('signupModal');
+            document.getElementById('signupForm').style.display = 'block';
+            document.getElementById('signupSuccess').classList.remove('show');
+            document.getElementById('signupForm').reset();
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            document.getElementById('signupModal').classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        document.getElementById('signupModal').addEventListener('click', (e) => {
+            if (e.target.classList.contains('modal-overlay')) closeModal();
+        });
+
+        // ==========================================
+        // CALCULATOR LOGIC
+        // ==========================================
+
+        function openCalculatorModal() {
+            const modal = document.getElementById('calculatorModal');
+            resetCalculator();
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeCalcModal() {
+            document.getElementById('calculatorModal').classList.remove('active');
+            document.body.style.overflow = '';
+        }
+        
+        document.getElementById('calculatorModal').addEventListener('click', (e) => {
+            if (e.target.classList.contains('modal-overlay')) closeCalcModal();
+        });
+
+        function updateCCOptions() {
+            const type = document.getElementById('calcVehicleType').value;
+            const ccSelect = document.getElementById('calcCC');
+            ccSelect.innerHTML = '<option value="">Select CC</option>';
+
+            if (type && PREMIUM_DATA[type]) {
+                PREMIUM_DATA[type].forEach(item => {
+                    const option = document.createElement('option');
+                    option.value = item.premium + '|' + item.cc_range; 
+                    option.textContent = item.cc_range;
+                    ccSelect.appendChild(option);
+                });
+            }
+        }
+
+        let calculatedQuoteData = null; 
+
+        function calculateTPPremium(e) {
+            e.preventDefault();
+            
+            const vehicleNo = document.getElementById('calcVehicleNo').value;
+            const mobile = document.getElementById('calcMobile').value;
+            const email = document.getElementById('calcEmail').value;
+            const typeVal = document.getElementById('calcVehicleType').value;
+            const ccValRaw = document.getElementById('calcCC').value;
+
+            if(!vehicleNo || !mobile || !email || !typeVal || !ccValRaw) {
+                alert("Please fill all fields");
+                return;
+            }
+
+            const [premiumStr, ccRange] = ccValRaw.split('|');
+            const basePremium = parseInt(premiumStr);
+            const gst = Math.round(basePremium * 0.18);
+            const total = basePremium + gst;
+
+            calculatedQuoteData = {
+                vehicle_number: vehicleNo,
+                phone: mobile,
+                email: email,
+                vehicle_type: typeVal === 'car' ? 'Car (Private)' : 'Two-Wheeler',
+                cc_range: ccRange,
+                base_premium: basePremium,
+                gst: gst,
+                total: total
+            };
+
+            document.getElementById('resVehicleNo').innerText = vehicleNo;
+            document.getElementById('resVehicleType').innerText = calculatedQuoteData.vehicle_type;
+            document.getElementById('resCC').innerText = ccRange;
+            document.getElementById('resBasePremium').innerText = '₹' + basePremium.toLocaleString('en-IN');
+            document.getElementById('resGST').innerText = '₹' + gst.toLocaleString('en-IN');
+            document.getElementById('resTotal').innerText = '₹' + total.toLocaleString('en-IN');
+
+            document.getElementById('calcFormContainer').style.display = 'none';
+            document.getElementById('calcResultContainer').style.display = 'block';
+            document.getElementById('calcSuccess').style.display = 'none';
+        }
+
+        function resetCalculator() {
+            document.getElementById('calcForm').reset();
+            document.getElementById('calcCC').innerHTML = '<option value="">Select Vehicle Type First</option>';
+            document.getElementById('calcFormContainer').style.display = 'block';
+            document.getElementById('calcResultContainer').style.display = 'none';
+            document.getElementById('calcSuccess').style.display = 'none';
+            calculatedQuoteData = null;
+        }
+
+        async function submitTPQuote() {
+            if (!calculatedQuoteData) return;
+
+            const formData = new FormData();
+            formData.append("access_key", WEB3FORMS_ACCESS_KEY);
+            formData.append("subject", "New TP Premium Quote Request");
+            formData.append("form_type", "TP Premium Calculator");
+            
+            for (const key in calculatedQuoteData) {
+                formData.append(key, calculatedQuoteData[key]);
+            }
+
+            const btn = event.target;
+            const originalText = btn.innerText;
+            btn.innerText = "Saving...";
+            btn.disabled = true;
+
+            try {
+                const response = await fetch("https://api.web3forms.com/submit", {
+                    method: "POST",
+                    body: formData,
+                    headers: { "Accept": "application/json" }
+                });
+
+                if (response.ok) {
+                    document.getElementById('calcResultContainer').style.display = 'none';
+                    document.getElementById('calcSuccess').style.display = 'block';
+                } else {
+                    alert("Error saving quote. Please try again.");
+                }
+            } catch (error) {
+                console.error(error);
+                alert("Network error.");
+            } finally {
+                btn.innerText = originalText;
+                btn.disabled = false;
+            }
+        }
+
+        // ==========================================
+        // FORM HANDLING
+        // ==========================================
+        
+        async function handleFormSubmit(e, formId, successId) {
+            e.preventDefault();
+            const form = document.getElementById(formId);
+            const data = new FormData(form);
+
+            data.append("access_key", WEB3FORMS_ACCESS_KEY);
+            data.append("subject", "New Submission from " + (data.get('form_type') || "Website"));
+
+            const submitBtn = form.querySelector('button[type="submit"]');
+            const originalText = submitBtn.innerText;
+            submitBtn.innerText = "Sending...";
+            submitBtn.disabled = true;
+
+            try {
+                const response = await fetch("https://api.web3forms.com/submit", {
+                    method: "POST",
+                    body: data,
+                    headers: { "Accept": "application/json" }
+                });
+
+                if (response.ok) {
+                    form.style.display = 'none';
+                    document.getElementById(successId).classList.add('show');
+                } else {
+                    alert("There was an error sending the message. Please try again.");
+                }
+            } catch (error) {
+                console.error("Error:", error);
+                alert("Network error. Please check your connection.");
+            } finally {
+                submitBtn.innerText = originalText;
+                submitBtn.disabled = false;
+            }
+        }
+
+        document.getElementById('quoteForm').addEventListener('submit', (e) => handleFormSubmit(e, 'quoteForm', 'formSuccess'));
+        document.getElementById('signupForm').addEventListener('submit', (e) => handleFormSubmit(e, 'signupForm', 'signupSuccess'));
+
+    </script>
+</body>
+</html>
